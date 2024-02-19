@@ -1,34 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 
 
 </head>
+
 <body>
 
-    <!-- header section -->
-    <header>
+  <!-- header section -->
+  <header>
+    <!-- navebar start -->
+    <div class="navbar bg-base-100 container">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li>
+              <a>contac</a>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl text-black">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>contac</a>
+          </li>
+          <li><a>About</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Bus <img src="images/bus-icon.png" alt=""></a>
+      </div>
+    </div>
 
-    </header>
+    <!-- benner section -->
+    <div class="lg:flex lg:justify-center  container bg-[url('images/banner.png')] bg-no-repeat lg:bg-top-center  bg-cover bg-center lg:bg-cover  rounded-lg lg:py-[150px] px-20">
 
 
-<!-- main section -->
-    <main>
+      <div class=" lg:text-center text-center lg:space-y-6  lg:py-10  ">
 
-    </main>
+        <h1 class=" lg:text-8xl text-3xl font-bold text-white w-[100%] lg:w-[100%] m-auto line-heid">End-to-End Travel with
 
-<!-- footer section -->
-    <footer>
+      
+        </h1>
+        <h1 class=" lg:text-8xl text-3xl font-bold text-[#1DD100]">P Paribahan</h1>
 
-    </footer>
+        <p class=" text-white lg:text-2xl w-[100%]  lg:w-[100%]">Yes, you can run unit tests and view the results directly within the app. The
+          <br>
+          integrated testing features allow for a streamlined
+        </p>
+
+        <button class="bg-[#1DD100] px-8 py-4 rounded-lg font-semibold text-xl text-black ">Buy Ticket</button>
+      </div>
 
 
-<h3></h3>
+
+
+
+    </div>
+
+  
+    <div class="container grid lg:grid-cols-3 gap-10 w-[70%] lg:mt-[-100px]">
+
+
+<div class=" lg:flex  flex bg-white py-10 px-2 gap-5 justify-center rounded-2xl border-botom ">
+  <div><img class=" w-[90px] h-[80%]" src="images/people.png" alt=""></div>
+  <div>
+    <h1 class="text-5xl font-bold text-black">5000K+</h1>
+    <p class="text-xl mt-5">Registered users</p>
+  
+  </div>
+</div>
+
+
+<div class="flex bg-white py-10 px-2 gap-5  justify-center rounded-2xl border-botom">
+  <div><img class="w-[90px] h-[80%]" src="images/ticket-cupon.png" alt=""></div>
+  <div class="">
+    <h1 class="text-5xl font-bold text-black">1.7 lacks</h1>
+    <p class=" text-xl mt-5">Tickets sold</p>
+  
+  </div>
+</div>
+
+<div class="flex bg-white py-10 px-2 gap-5 justify-center rounded-2xl items-center border-botom">
+  <div ><img class="w-[90px] h-[80%]" src="images/stoppage.png" alt=""></div>
+  <div>
+    <h1 class="text-5xl font-bold text-black">80K+</h1>
+    <p class="text-xl mt-5">Rental partners</p>
+  
+  </div>
+</div>
+
+
+
+    </div>
+
+
+  </header>
+
+
+  <!-- main section -->
+
+
+  <main>
+<!-- offer section -->
+<div class="mt-14 container">
+
+<div><h1 class="text-center text-5xl font-bold text-black mb-16">Best offers for you</h1></div>
+
+<div class="lg:flex  lg:justify-center lg:gap-8   ">
+
+
+  <div class= " w-[100%] bg-yellow-500  justify-between  lg:flex lg:justify-between lg:gap-10 p-[50px] items-center leading-9 lg:w-[50%] rounded-3xl lg:bg-[url(images/cupon-devider.png)] bg-no-repeat bg-center bg-contain mb-7"> 
+
+      <div class="space-y-[20px] mb-5">
+        <h1 class="text-5xl font-bold text-black">15% OFF</h1>
+        <h4 class="text-2xl font-bold">on your next purchase</h4>
+        <p class="text-2xl"> use by January 2024</p>
+      </div>
+      <div class="space-y-[20px]"><h1 class="text-3xl">NEW15</h1>
+      <p class="text-2xl ">Coupon Code</p></div>
+</div>
+
+
+<div class="bg-[#F78C9C] lg:flex  justify-between w-[100%] lg:justify-between lg:gap-10 p-[50px] items-center leading-9 lg:w-[50%] rounded-3xl  lg:bg-[url(images/cupon-devider.png)] bg-no-repeat bg-center bg-contain "> 
+  
+
+    <div class="space-y-[20px] mb-5">
+      <h1 class="text-5xl font-bold text-black">20% OFF</h1>
+      <h4 class="text-2xl font-bold">on your next purchase</h4>
+      <p class="text-2xl"> use by January 2024</p>
+    </div>
+
+   
+
+  <div class="space-y-[20px]">
+    
+    <h1 class="text-3xl">Couple 20</h1>
+  <p class="text-2xl ">Coupon Code</p></div>
+</div>
+
+</div>
+
+
+
+<div>
+  <button class="text-[#1DD100]">See All Offers</button>
+</div>
+
+
+</div>
+
+
+
+  </main>
+
+  <!-- footer section -->
+  <footer>
+
+  </footer>
+
+
+  <h3></h3>
 
 </body>
+
 </html>
