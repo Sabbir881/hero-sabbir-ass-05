@@ -17,7 +17,7 @@
   <!-- header section -->
   <header>
     <!-- navebar start -->
-    <div class="navbar bg-base-100 container">
+    <div class="navbar bg-base-100 container ">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -34,18 +34,18 @@
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-xl text-black">P-Ticket</a>
+        <a class="btn btn-ghost  text-black text-3xl">P-Ticket</a>
       </div>
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
+        <ul class="menu menu-horizontal px-1 text-xl">
+          <li ><a>Home</a></li>
           <li><a>contac</a>
           </li>
           <li><a>About</a></li>
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn">Bus <img src="images/bus-icon.png" alt=""></a>
+        <a class="btn text-xl" >Bus <img src="images/bus-icon.png" alt=""></a>
       </div>
     </div>
 
@@ -69,8 +69,12 @@
           integrated testing features allow for a streamlined
         </p>
 
-        <button class="bg-[#1DD100] py-2 px-4 lg:px-8 lg:py-4 rounded-lg lg:font-semibold text-xl text-black mt-4 ">Buy
-          Ticket</button>
+        <div class="py-8">
+          <a href="#seat-section" class="bg-[#1DD100] py-2 px-4 lg:px-8 lg:py-4 rounded-lg lg:font-semibold text-xl text-black mt-4 ">Buy Ticket </a>
+
+        </div>
+        
+        
       </div>
 
 
@@ -152,12 +156,12 @@
           class=" w-[100%] bg-yellow-500  justify-between  lg:flex lg:justify-between lg:gap-10 p-[50px] items-center leading-9 lg:w-[50%] rounded-3xl lg:bg-[url(images/cupon-devider.png)] bg-no-repeat bg-center bg-contain mb-7">
 
           <div class="lg:space-y-[20px] lg:mb-5 space-y-[10px]">
-            <h1 class=" lg:text-5xl text-3xl font-bold text-black">15% OFF</h1>
+            <h1 class=" lg:text-5xl text-3xl font-bold text-black">20% OFF</h1>
             <h4 class="lg:text-2xl text-xl font-bold">on your next purchase</h4>
             <p class="lg:text-2xl text-xl"> use by January 2024</p>
           </div>
           <div class="lg:space-y-[20px] space-y-[10] mt-5">
-            <h1 class="text-3xl">NEW15</h1>
+            <h1 class="text-3xl">Couple 20</h1>
             <p class="text-2xl ">Coupon Code</p>
           </div>
         </div>
@@ -251,14 +255,14 @@
 
 
         <!-- set sectioin -->
-        <div class="mt-10 w-[80%] m-auto bg-white ">
+        <div id="seat-section" class="mt-10 w-[80%] m-auto bg-white  lg:flex justify-between ">
 
           <div class="w-[60%] p-[40px]">
             <h1 class=" py-7 text-2xl font-semibold border-b-4 border-[black] border-dashed">Select Your Seat</h1>
-            <div class="lg:flex justify-between items-center py-7 border-b-4 border-dashed border-black">
+            <div class="lg:flex justify-between items-center py-7 border-b-4 border-dashed border-black text-xl">
 
               <h3> <img class="float-left clear-both" src="images/seat-gray.png" alt="">Available</h3>
-              <h3> <img class="float-left clear-both" src="images/seat-green-filled.png" alt="">Selected</h3>
+              <h3 class="text-[#1DD100] font-semibold"> <img class="float-left clear-both " src="images/seat-green-filled.png" alt="">Selected</h3>
             </div>
 
             <div class="text-right py-3 px-7 bg-slate-200">
@@ -351,7 +355,90 @@
 
 
 
-          <div></div>
+          <div class="w-[50%] px-5 mt-10 ">
+
+            <div class="border-b-4 border-dashed py-7"> <h1 class="text-2xl font-bold">Select Your Seat</h1></div>
+
+            <div class="mt-20 bg-slate-200 m-auto text-center rounded-2xl">
+            <div class="lg:grid grid-cols-3 p-9 border-b-4 border-dashed text-2xl">
+              <h2>seat <span class="bg-[#1DD100] text-white px-4 rounded-2xl">2</span></h2>
+              <h2>class</h2>
+              <h2>price</h2>
+            </div>
+            
+
+            <div class="grid grid-cols-3 text-center py-7 px-7 text-xl"> 
+
+              <p>C2</p>
+              <p>Economoy</p>
+              <p>550</p>
+              
+            </div>
+
+            <div class="grid grid-cols-3 text-center py-7 px-7 text-2xl"> 
+
+              <p>C2</p>
+              <p>Economoy</p>
+              <p>550</p>
+
+            
+              
+            </div>
+            <hr>
+
+            <div class="flex  justify-between px-20 py-4 text-2xl">
+              <h1>Total price</h1>
+              <h1>BDT 1150</h1>
+            </div>
+
+
+
+            <div class=" mt-4 py-2 rounded-xl w-[60%] m-auto bg-white ">
+              <input class="p-2 rounded-2xl" type="text" placeholder="Have Any copuon">
+              <button class="px-5 py-3 bg-[#1DD100] rounded-2xl">Apply</button>
+            </div>
+
+            <div class="flex justify-center gap-52 text-center py-3">
+              <h5 class="text-2xl">Grand Total</h5>
+              <h5 class="text-2xl">BDT <span>1100</span></h5>
+            </div>
+
+
+
+
+
+
+
+
+            </div>
+
+            
+            <div class="mt-9 bg-slate-200 p-5 space-y-6 rounded-xl">
+
+              <form class="space-y-4  " action="#">
+                <label class="text-xl font-semibold" for="">passenger Name</label><br>
+                <input class="rounded-xl w-[100%] py-2" type="text">
+                <br>
+
+                <label class="text-xl font-semibold" for="">
+                Phone number
+                </label>
+                <br>
+                <input class="rounded-xl w-[100%] px-2 py-2"  type="text">
+                <br>
+
+                <label class="text-xl font-semibold" for="">Email Id </label><br>
+                <input class="rounded-xl px-2 py-2 w-[100%]" type="email">
+               
+
+              </form>
+
+              <div><button class="bg-[#1DD100] w-[100%] py-3 rounded-2xl">Next</button></div>
+            </div>
+
+
+          </div>
+
         </div>
 
 
@@ -372,29 +459,31 @@
   </main>
 
   <!-- footer section -->
-  <footer>
+  <footer >
 
-    <footer class="footer p-10 bg-neutral text-neutral-content">
-      <nav>
-        <h6 class="footer-title">Services</h6> 
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
-      </nav> 
-      <nav>
-        <h6 class="footer-title">Company</h6> 
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
-      </nav> 
-      <nav>
-        <h6 class="footer-title">Legal</h6> 
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
-      </nav>
+    <footer class="footer p-10 bg-neutral text-neutral-content ">
+      <div class="container grid grid-cols-3 footer text-center">
+        <nav>
+          <h6 class="footer-title">Services</h6> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Legal</h6> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </div>
     </footer>
 
   </footer>
